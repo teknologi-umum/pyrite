@@ -1,17 +1,15 @@
-import { ButtonPrimary } from "./button-primary";
+import { ButtonLink } from "./button-link";
 
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center py-4 px-4 bg-white shadow-md">
       <div>
         {/* <img src="/path/to/logo.png" alt="Logo" className="h-8" /> */}
-        <ButtonPrimary name="Contribute" />
-        <ButtonPrimary name="Budget" />
-        <ButtonPrimary name="About" />
+        <ButtonLink to="/" name="Home" />
+        <ButtonLink to="#" name="About" />
       </div>
       <div>
-        <ButtonPrimary name="Submit" />
-        <ButtonPrimary name="Contact" />
+        <ButtonLink to="#" name="Contact" />
       </div>
     </nav>
   );

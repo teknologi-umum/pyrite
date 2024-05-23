@@ -55,7 +55,7 @@ export function CardExpense({
         </ul>
       </CardContent>
       <CardFooter>
-        <ButtonLink name={footer} />
+        <ButtonLink to="#" name={footer} />
       </CardFooter>
     </Card>
   );

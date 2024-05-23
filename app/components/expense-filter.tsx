@@ -1,15 +1,16 @@
-import { ButtonPrimary } from "./button-primary";
 import { SelectPrimary } from "./select-primary";
 
 const ExpenseFilter = () => {
   return (
     <div className="py-4 flex justify-between items-center">
       <div>
-        <ButtonPrimary name="Received" />
-        <ButtonPrimary name="Submmitted" />
+        <input
+          type="text"
+          placeholder="Search"
+          className="input rounded-lg p-2"
+        />
       </div>
       <div className="flex space-x-4">
-        <input type="text" placeholder="Search" className="input rounded-lg p-2" />
         <SelectPrimary
           placeholder="Sort By"
           items={[
