@@ -40,23 +40,6 @@ const ExpenseList = () => {
       expenses={expenses}
       footer="View all expenses"
     />
-    // <div className="space-y-4">
-    //   {expenses.map(expense => (
-    //     <div key={expense.id} className="p-4 border rounded-md bg-white">
-    //       <div className="flex justify-between">
-    //         <div>
-    //           <h2 className="text-lg font-bold">{expense.title}</h2>
-    //           <p>{expense.category}</p>
-    //           <p>from {expense.from} • {expense.date}</p>
-    //         </div>
-    //         <div className="text-right">
-    //           <p className="text-lg font-bold">{expense.amount} {expense.currency}</p>
-    //           <p className={`status-${expense.status.toLowerCase()}`}>{expense.status}</p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>
   );
 };
 

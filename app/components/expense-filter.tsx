@@ -9,7 +9,7 @@ const ExpenseFilter = () => {
         <ButtonPrimary name="Submmitted" />
       </div>
       <div className="flex space-x-4">
-        <input type="text" placeholder="Search" className="input" />
+        <input type="text" placeholder="Search" className="input rounded-lg p-2" />
         <SelectPrimary
           placeholder="Sort By"
           items={[

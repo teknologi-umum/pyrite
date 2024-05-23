@@ -44,7 +44,7 @@ export function CardExpense({
                 </h3>
               </div>
 
-              <p className="text-sm font-light">{expense.category}</p>
+              <p className="text-sm font-light">Category: {expense.category}</p>
               <p className="text-sm font-light">
                 To: {expense.payout.recipient_name} -{" "}
                 {expense.timestamp.toDateString()}
