@@ -1,7 +1,7 @@
 import Navbar from '~/components/navbar';
 import ExpenseFilter from '~/components/expense-filter';
 import ExpenseList from '~/components/expense-list';
-import Sidebar from '~/components/sidebar';
+import ExpenseSidebar from '~/components/expense-sidebar';
 
 const Index = () => {
   return (
@@ -14,7 +14,7 @@ const Index = () => {
           <div className="flex-grow">
             <ExpenseList />
           </div>
-          <Sidebar />
+          <ExpenseSidebar />
         </div>
       </div>
     </div>

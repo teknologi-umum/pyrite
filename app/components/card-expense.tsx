@@ -32,11 +32,11 @@ export function CardExpense({title, description, expenses, footer}: CardExpenseP
                             <div className="flex justify-between">
                                 <h3 className="text-lg font-medium">{expense.description}</h3>
                                 <h3 className="text-lg font-medium">
-                                    {new Intl.NumberFormat("en-US", {
+                                    {new Intl.NumberFormat("id-ID", {
                                         style: "currency",
-                                        currency: "USD",
+                                        currency: "IDR",
                                     }).
-                                    format(expense.original_ammount.toNumber())
+                                    format(expense.idr_amount.toNumber())
                                     }
                                 </h3>
                             </div>
