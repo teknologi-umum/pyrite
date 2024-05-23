@@ -4,19 +4,19 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
 type SelectItem = {
   key: string;
   value: string;
   label: string;
-}
+};
 type SelectPrimaryProps = {
   placeholder: string;
   items: SelectItem[];
-}
+};
 
-export function SelectPrimary({placeholder,items}: SelectPrimaryProps) {
+export function SelectPrimary({ placeholder, items }: SelectPrimaryProps) {
   return (
     <Select>
       <SelectTrigger className="w-[120px]">
@@ -30,5 +30,5 @@ export function SelectPrimary({placeholder,items}: SelectPrimaryProps) {
         ))}
       </SelectContent>
     </Select>
-  )
+  );
 }

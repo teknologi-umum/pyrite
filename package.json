@@ -10,7 +10,8 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
     "test": "exit 0",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.0.0",

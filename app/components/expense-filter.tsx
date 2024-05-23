@@ -10,13 +10,11 @@ const ExpenseFilter = () => {
       </div>
       <div className="flex space-x-4">
         <input type="text" placeholder="Search" className="input" />
-        <SelectPrimary 
-            placeholder="Sort By"
-            items={
-                [
-                    { key: "newestFirst", value: "newestFirst", label: "Newest First" },
-                ]
-            }
+        <SelectPrimary
+          placeholder="Sort By"
+          items={[
+            { key: "newestFirst", value: "newestFirst", label: "Newest First" },
+          ]}
         />
       </div>
     </div>

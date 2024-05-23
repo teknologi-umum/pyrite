@@ -1,6 +1,11 @@
-import { z } from "zod"
-import { Decimal } from "decimal.js"
-import { AccountEntryCategory, AccountEntryCurrency, AccountEntryPaymentMethod, AccountEntryType } from "~/types/accountEntry"
+import { z } from "zod";
+import { Decimal } from "decimal.js";
+import {
+  AccountEntryCategory,
+  AccountEntryCurrency,
+  AccountEntryPaymentMethod,
+  AccountEntryType,
+} from "~/types/accountEntry";
 
 export const accountEntrySchema = z.object({
   transaction_code: z.string(),
@@ -12,9 +17,9 @@ export const accountEntrySchema = z.object({
   description: z.string().max(500),
   payout: z.object({
     recipient_name: z.string(),
-    method: z.enum(AccountEntryPaymentMethod)
+    method: z.enum(AccountEntryPaymentMethod),
   }),
-  timestamp: z.date()
-})
+  timestamp: z.date(),
+});
 
-export type AccountEntry = z.infer<typeof accountEntrySchema>
+export type AccountEntry = z.infer<typeof accountEntrySchema>;

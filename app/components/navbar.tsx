@@ -1,4 +1,4 @@
-import { ButtonPrimary } from './button-primary';
+import { ButtonPrimary } from "./button-primary";
 
 const Navbar = () => {
   return (

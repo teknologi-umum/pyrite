@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 type ButtonLinkProps = {
-    name?: string;
+  name?: string;
 };
-  
-export function ButtonLink({name}: ButtonLinkProps) {
-  return <Button variant="link">{name}</Button>
+
+export function ButtonLink({ name }: ButtonLinkProps) {
+  return <Button variant="link">{name}</Button>;
 }
