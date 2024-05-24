@@ -43,7 +43,7 @@ jobs:
           TZ: Asia/Jakarta
 
       - uses: codecov/codecov-action@v3
-  
+
   cd:
     name: CD
     needs:
