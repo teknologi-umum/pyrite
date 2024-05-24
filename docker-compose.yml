@@ -1,0 +1,31 @@
+# DISCLAIMER:
+#   We use this docker compose file for development purposes only.
+#   Please don't directly use this configuration for production deployment.
+
+services:
+  # DO NOT use this version of NocoDB if you are deploying this to production.
+  # Always use their SaaS offering.
+  nocodb:
+    image: nocodb/nocodb:latest
+    ports:
+      - 127.0.0.1:8080:8080
+    environment:
+      NC_ADMIN_EMAIL: admin@localhost.net
+      NC_ADMIN_PASSWORD: password
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        max_attempts: 5
+        delay: 30s
+        window: 120s
+      resources:
+        limits:
+          memory: 500MB
+          cpus: '1'
+    volumes:
+      - nocodb-data:/usr/app/data/
+
+volumes:
+  nocodb-data:
