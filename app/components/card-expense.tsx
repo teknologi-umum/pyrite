@@ -5,9 +5,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "~/components/ui/card";
 
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "~/components/ui/separator";
 import { AccountEntry } from "~/dto/accountEntry";
 import { ButtonLink } from "./button-link";
 

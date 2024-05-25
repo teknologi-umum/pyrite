@@ -11,7 +11,7 @@
     "start": "remix-serve ./build/server/index.js",
     "test": "exit 0",
     "typecheck": "tsc",
-    "format": "prettier --write ."
+    "format": "prettier --ignore-path .gitignore --write ."
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.0.0",
