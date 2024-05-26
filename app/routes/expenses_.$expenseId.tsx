@@ -32,7 +32,7 @@ const Index = () => {
     <div>
       <Navbar />
       <div className="container mx-auto px-4 py-8">
-        <h1 className="font-semibold text-2xl">Invoice #201775 to <a href="/">vue</a></h1>
+        <h1 className="font-semibold text-2xl">Invoice {expense.transaction_code} to {expense.payout.recipient_name}</h1>
         <div className="flex space-x-8 mt-6">
           <div className="flex-grow">
           <Card>
@@ -97,9 +97,6 @@ const Index = () => {
                 </div>
               </div>
             </CardContent>
-            {/* <CardFooter>
-              <ButtonLink to="#" name={footer} />
-            </CardFooter> */}
           </Card>
           </div>
           <ExpenseSidebar />

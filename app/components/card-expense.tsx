@@ -34,6 +34,7 @@ export function CardExpense({
         <ul>
           {expenses.map((expense) => (
             <li className="my-2" key={expense.transaction_code}>
+              {/* TODO: use whatever we use for detail links. Eg: tx code, unique id, uuid, etc. */}
               <a href={`/expenses/123`}>
                 <div className="flex justify-between">
                   <h3 className="text-lg font-medium">{expense.description}</h3>
