@@ -19,7 +19,7 @@ module.exports = {
     commonjs: true,
     es6: true,
   },
-  ignorePatterns: ["!**/.server", "!**/.client", '/@/'],
+  ignorePatterns: ["!**/.server", "!**/.client", "/@/"],
 
   // Base config
   extends: ["eslint:recommended"],
@@ -47,6 +47,9 @@ module.exports = {
         "import/resolver": {
           typescript: {},
         },
+      },
+      rules: {
+        "react/prop-types": "off",
       },
     },
 
